@@ -1,0 +1,25 @@
+# Generated from imports in app.py
+# Verify versions for your environment before deploying or pinning versions.
+
+streamlit
+python-dotenv
+python-docx
+pdfplumber
+PyPDF2
+textract
+sentence-transformers
+transformers
+torch
+pinecone-client
+langchain
+langchain-huggingface
+langchain-google-genai
+langchain-pinecone
+langchain-core
+langgraph
+google-genai
+
+# Optional / platform notes:
+# - textract may require system packages (libmagic, antiword, etc) depending on platform.
+# - If you use GPU for embeddings or transformers, install appropriate torch version (see https://pytorch.org/).
+# After verifying functionality, consider pinning package versions (e.g., package==1.2.3).
