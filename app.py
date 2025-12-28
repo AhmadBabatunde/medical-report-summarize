@@ -14,8 +14,12 @@ from langgraph.graph import END, StateGraph
 load_dotenv()
 
 # --- 1. Configuration & Vector Store ---
-pinecone_api_key = os.getenv("pinecone_api_key")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# pinecone_api_key = os.getenv("pinecone_api_key")
+# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+pinecone_api_key = st.secrets["pinecone_api_key"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+
 
 embedding_mod = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
