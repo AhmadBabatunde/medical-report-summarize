@@ -5,3 +5,5 @@ med-train.csv
 to-csv.py
 .env
 __pycache__/
+file.py
+testing.ipynb

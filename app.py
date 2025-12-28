@@ -50,7 +50,7 @@ def retrieve(state: GraphState):
     """Retrieve documents from Pinecone."""
     print("---RETRIEVING EXAMPLES---")
     question = state["question"]
-    documents = retriever.invoke(question)
+    documents = retriever.get_relevant_documents(question)
     return {"documents": documents, "question": question}
 
 def generate(state: GraphState):
