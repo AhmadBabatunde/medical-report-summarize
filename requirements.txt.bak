@@ -3,11 +3,11 @@ langchain_core==1.2.5
 langchain_google_genai==4.1.2
 langchain_huggingface==1.2.0
 langchain_pinecone==0.2.13
-langgraph==0.6.5
+langgraph==1.0.5
 pdfplumber
 PyPDF2==3.0.1
-python-dotenv==1.1.0
+python-dotenv==1.2.1
 python_docx==1.1.2
 streamlit==1.38.0
-sentence-transformers==3.1.0
+sentence-transformers
 #textract
