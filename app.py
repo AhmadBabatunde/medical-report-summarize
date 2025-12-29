@@ -268,9 +268,25 @@ if __name__ == "__main__":
 
     st.markdown("""
     <style>
-        .big-title {font-size:32px; font-weight:700;}
-        .muted {color:#6c757d}
-        .card {background-color:#f8f9fa; padding:16px; border-radius:8px}
+        /* Force light color scheme */
+        :root { color-scheme: light; }
+        html, body, [data-testid="stAppViewContainer"], [data-testid="stMain"], .block-container, .stApp {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+        }
+        [data-testid="stSidebar"], .css-1d391kg, .css-185krt0 {
+            background-color: #f8f9fa !important;
+            color: #000000 !important;
+        }
+        header, footer, [data-testid="stToolbar"] { background-color: transparent !important; color: #000000 !important; }
+        /* App-specific styles */
+        .big-title {font-size:32px; font-weight:700; color:#000000 !important;}
+        .muted {color:#6c757d !important;}
+        .card {background-color:#f8f9fa; padding:16px; border-radius:8px; color:#000000 !important;}
+        /* Prevent browser 'force dark mode' from inverting images/icons */
+        img, svg { filter: none !important; }
+        /* Ensure inputs and text areas are dark text on light background */
+        textarea, input, .stTextInput, .stTextArea { background-color: #ffffff !important; color: #000000 !important; }
     </style>
     """, unsafe_allow_html=True)
 

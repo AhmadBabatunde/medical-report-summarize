@@ -7,3 +7,4 @@ to-csv.py
 __pycache__/
 file.py
 testing.ipynb
+.streamlit/
